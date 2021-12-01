@@ -1,2 +1,2 @@
 # SCRTnetwork_analytics
-Building a Credit Score Check Oracle for the Secret Network
+A Credit Score Check Oracle for the Secret Network
