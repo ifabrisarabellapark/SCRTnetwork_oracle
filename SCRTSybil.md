@@ -1,5 +1,4 @@
-# Team Name 
-BalloonBox
+# Team Name: BalloonBox
 
 ## Project Description 
 Project name: SCRTSybil
