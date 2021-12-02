@@ -19,7 +19,7 @@ How can one validate the trustworthiness of blockchain users, while maintaining 
 
 #### Components
 
-1. **GUI**: user logs into SCRTSybil web application through 3rd party authenticators. Users will then log into their SCRT wallet, and also have at their disposal a profile and account balance. The front end will be built on React.js.
+1. **GUI**: user logs into SCRTSybil web application through third party authenticators. Users will then log into their SCRT wallet, and also have at their disposal a profile and account balance. The front end will be built on React.js.
  
 2. **Restful API**: Python (Flask) + webhook framework with public APIs that can be used. In most cases, we will use OAuth, and in all other cases, we will use a one-time-only key. This environment will manage the integration among wallet, external parties, credit score module, and the smart contract compiler.
  
@@ -184,7 +184,7 @@ Initially, the WebApp for the SCRTSybil Oracle will only allow user authenticati
        - credit score check to support loan application for university/post-secondary education (in such case validators should include a diverse set of eLearning Platforms, e.g., Coursera, LinkedIn Learning, Udacity, CloudAcademy, Udemy, DataCamp. An academic institution may want a credit score for a prospective student based on financial history but also academic history. For this use case, we could skew the algorithm weightings towards oAuth, where eLearning Platforms prove/disprove self-study courses.
 
    
-      - 3rd party (e.g., banks, financial institutions) request issuing of Secret private keys to validate user’s credibility 
+      - third party (e.g., banks, financial institutions) request issuing of Secret private keys to validate user’s credibility 
 
 
 3. **More Credit Check Providers**
