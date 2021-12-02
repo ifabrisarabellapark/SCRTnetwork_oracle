@@ -11,19 +11,19 @@ How can one validate the trustworthiness of blockchain users, while maintaining 
 
 ## Detailed Product Description 
 
-![](https://github.com/BalloonBox-Inc/SCRTnetwork_oracle/blob/main/images/SCRTSybil_oracle.png)
+![SCRTSybil Oracle Model](https://github.com/BalloonBox-Inc/SCRTnetwork_oracle/blob/main/images/SCRTSybil_oracle.png)
 
-![](https://github.com/BalloonBox-Inc/SCRTnetwork_analytics/blob/main/images/SCRTSybil_architecture.png)
+![SCRTSybil Architecture](https://github.com/BalloonBox-Inc/SCRTnetwork_analytics/blob/main/images/SCRTSybil_architecture.png)
 
 
 
 #### Components
 
-**GUI**: user logs into SCRTSybil web application through 3rd party authenticators. Note that depending on the provider, it may require a private key to access the provider's data. Users will then log into their SCRT wallet, and also have at their disposal a profile and account balance. The front end will be built on React.js.
+1. **GUI**: user logs into SCRTSybil web application through 3rd party authenticators. Users will then log into their SCRT wallet, and also have at their disposal a profile and account balance. The front end will be built on React.js.
  
-**Restful API**: Python (Flask) + webhook framework with public APIs that can be used. In most cases, we will use OAuth, and in all other cases, we will use a one-time-only key. This environment will manage the integration among wallet, external parties, credit score module, and the smart contract compiler.
+2. **Restful API**: Python (Flask) + webhook framework with public APIs that can be used. In most cases, we will use OAuth, and in all other cases, we will use a one-time-only key. This environment will manage the integration among wallet, external parties, credit score module, and the smart contract compiler.
  
-**Credit Score Module**: credit score algorithm integrating at least these 5 weighted metrics. Metrics were adapted from the factors used by the three largest American consumer credit reporting agencies: Equifax, Experian, and TransUnion. 
+3. **Credit Score Module**: credit score algorithm integrating at least these 5 weighted metrics. Metrics were adapted from the factors used by the three largest American consumer credit reporting agencies: Equifax, Experian, and TransUnion. 
 Transaction History (txn counts + txn volume) 
 Number and types of bank accounts/wallets owned
 Ratio of used liquidity / available liquidity for each account
@@ -31,15 +31,18 @@ Length of account history
 Recent (last 21 days) account activity
 A machine learning module will be built with SciKit-Learn Python library + Flask for web framework. Output score on 300-900 non-linear numerical scale with associated qualitative scale: Excellent/Good/Fair/Below average/Poor.
  
-**Smart Contract Compiler**: With the support of CosmWasm, this compiler will process statements written in Python and turn them into Rust smart contracts.
+4. **Smart Contract Compiler**: With the support of CosmWasm, this compiler will process statements written in Python and turn them into Rust smart contracts.
  
-**Node**: The node will be built on Raspberry Pi 4 (8GB) computers (per node) and managed in Dockerized environments with the hardware installed on-site. The node will all be open-sourced.
+5. **Node**: The node will be built on Raspberry Pi 4 (8GB) computers (per node) and managed in Dockerized environments with the hardware installed on-site. The node will all be open-sourced.
  
 ## Go-to-Market plan
 We are building a credit scoring on SCRT as base-layer infrastructure for a series of use cases where individuals or businesses may verify potential customers for extending credit, P2P lending, or vetting a potential employee with financial background checks.
 The go-to-market plan is two-fold:
-Transaction fees & Request Fees. Users requesting to view a person’s credit score will need to be issued with a key to access that user’s smart contract stored on SCRT. This will require a fraction of SCRT as a transaction fee for exercising that key on the smart contract. For companies requesting scores for people, we can make the model comparable with the current $10 fee for an Equifax report in Canada.
-Self-run credit scores. If an individual wants to know their own credit score and how they rank on the SCRT network in terms of ‘credibility’, we will charge a fee in SCRT (less than the fee to a score requester as above) for computing the score. This will be a fee that the user pays in-wallet to SCRTSybil, however, the score is not necessarily published as a smart contract. 
+
+1. Transaction fees & Request Fees. Users requesting to view a person’s credit score will need to be issued with a key to access that user’s smart contract stored on SCRT. This will require a fraction of SCRT as a transaction fee for exercising that key on the smart contract. For companies requesting scores for people, we can make the model comparable with the current $10 fee for an Equifax report in Canada.
+
+2. Self-run credit scores. If an individual wants to know their own credit score and how they rank on the SCRT network in terms of ‘credibility’, we will charge a fee in SCRT (less than the fee to a score requester as above) for computing the score. This will be a fee that the user pays in-wallet to SCRTSybil, however, the score is not necessarily published as a smart contract. 
+
 Our core goal is to initially provide tools for building financial ecosystems on SCRT as the network gains traffic and user adoption. We believe in the value of having a public network with the option and flexibility of data encryption and ultimately believe that mainstream tools for financial services like credit scores will be of the first major requirements for service providers on SCRT.  
  
 ## Value capture for Secret Network ecosystem
@@ -107,6 +110,8 @@ We would be willing to consider part payment in SCRTs, up to 50%. The grant can 
 ### Milestone 1 - APIs, Database, Integration, Credit Score Algorithm
 - **Estimated duration:** Week 1-6
 - **Costs:** 50,000 USD
+
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
@@ -116,9 +121,12 @@ We would be willing to consider part payment in SCRTs, up to 50%. The grant can 
 | 3. | Data Integration | Overlay web2 with web3 validation data for each API. |
 | 3. | ML Module | Deploy an ML model to calculate unser credit score. |
  
+ 
+ 
 ### Milestone 2 - Node, Smart Contract Compiler
 - **Estimated duration:** Week 7-12
 - **Costs:** 50,000 USD
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
@@ -127,9 +135,12 @@ We would be willing to consider part payment in SCRTs, up to 50%. The grant can 
 | 1. | Node | Spin up SCRT network node via Raspberry Pi 4.  |
 | 2. | Smart Contract Compiler | Write a smart contract in Rust to encrypt the calculated credit score to SCRT chain. |
  
+ 
 ### Milestone 3 - WebApp: framework + UI 
 - **Estimated duration:** Week 13-16
 - **Costs:** 30,000 USD
+
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
@@ -143,11 +154,11 @@ We would be willing to consider part payment in SCRTs, up to 50%. The grant can 
 
 #### Why SCRT
 
-**How did you hear about the SCRT Network Grants?** We heard through the Secret Network Webpage.
+1. **How did you hear about the SCRT Network Grants?** We heard through the Secret Network Webpage.
 
-**Have you ever applied for other grants?** Yes, we have applied for another grant to fund an entirely different project proposal for a different ecosystem. 
+2. **Have you ever applied for other grants?** Yes, we have applied for another grant to fund an entirely different project proposal for a different ecosystem. 
 
-**Why did we apply for this grant?** We, at BalloonBox, are a team of developers excited about the future of decentralized technologies, and we want to contribute to building it! We think that the SCRT network is rapidly and innovatively unlocking the full value of decentralized applications by leveraging the computational privacy of Trusted Execution Environments (TEEs) and secret contracts to design Secret Apps preserving users’ privacy. We value the novelty of privacy-preserving smart contracts and their scalability potential which make SCRT a network that is uniquely set apart from other ecosystems. Specifically, we are submitting a proposal under the ‘‘Ecosystem’’ category because we want to build tools to expand the Secret Network and improve general usability. We hope our Credit Score Check to be the first of many such tools.  
+3. **Why did we apply for this grant?** We, at BalloonBox, are a team of developers excited about the future of decentralized technologies, and we want to contribute to building it! We think that the SCRT network is rapidly and innovatively unlocking the full value of decentralized applications by leveraging the computational privacy of Trusted Execution Environments (TEEs) and secret contracts to design Secret Apps preserving users’ privacy. We value the novelty of privacy-preserving smart contracts and their scalability potential which make SCRT a network that is uniquely set apart from other ecosystems. Specifically, we are submitting a proposal under the ‘‘Ecosystem’’ category because we want to build tools to expand the Secret Network and improve general usability. We hope our Credit Score Check to be the first of many such tools.  
  
  
 #### Scope and Limitations
@@ -162,18 +173,18 @@ Initially, the WebApp for the SCRTSybil Oracle will only allow user authenticati
 
 
 2. **Auxiliary & Novel Use Cases**
-Developing an oracle for credit score checks automatically satisfies an auxiliary use case:
+   - Developing an oracle for credit score checks automatically satisfies an auxiliary use case:
 
-   - personal information integrity validation: do the user’s first and last name match across different platforms (Coinbase, Binance, Plaid, etc.)?
+       - personal information integrity validation: do the user’s first and last name match across different platforms (Coinbase, Binance, Plaid, etc.)?
    
-Furthermore, we’ve designed our oracle to easily scale up to use cases that we consider relevant to the Secret Network. Among them are:
+   - Furthermore, we’ve designed our oracle to easily scale up to use cases that we consider relevant to the Secret Network. Among them are:
 
-   - credit score check for Anti-Money Laundering (AML)
+       - credit score check for Anti-Money Laundering (AML)
    
-   - credit score check to support loan application for university/post-secondary education (in such case validators should include a diverse set of eLearning Platforms, e.g., Coursera, LinkedIn Learning, Udacity, CloudAcademy, Udemy, DataCamp. An academic institution may want a credit score for a prospective student based on financial history but also academic history. For this use case, we could skew the algorithm weightings towards oAuth, where eLearning Platforms prove/disprove self-study courses.
+       - credit score check to support loan application for university/post-secondary education (in such case validators should include a diverse set of eLearning Platforms, e.g., Coursera, LinkedIn Learning, Udacity, CloudAcademy, Udemy, DataCamp. An academic institution may want a credit score for a prospective student based on financial history but also academic history. For this use case, we could skew the algorithm weightings towards oAuth, where eLearning Platforms prove/disprove self-study courses.
 
-
-   - 3rd party (e.g., banks, financial institutions) request issuing of Secret private keys to validate user’s credibility 
+   
+      - 3rd party (e.g., banks, financial institutions) request issuing of Secret private keys to validate user’s credibility 
 
 
 3. **More Credit Check Providers**
