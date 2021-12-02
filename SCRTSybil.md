@@ -13,7 +13,8 @@ How can one validate the trustworthiness of blockchain users, while maintaining 
 
 ![](https://github.com/BalloonBox-Inc/SCRTnetwork_oracle/blob/main/images/SCRTSybil_oracle.png)
 
-![](https://github.com/BalloonBox-Inc/SCRTnetwork_analytics/blob/main/images/SCRTSybil_Architecture.png)
+![](https://github.com/BalloonBox-Inc/SCRTnetwork_analytics/blob/main/images/SCRTSybil_architecture.png)
+
 
 
 #### Components
