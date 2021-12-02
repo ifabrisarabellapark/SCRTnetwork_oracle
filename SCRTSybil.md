@@ -180,7 +180,7 @@ Initially, the WebApp for the SCRTSybil Oracle will only allow user authenticati
 
     - personal information integrity validation: do the user’s first and last name match across different platforms (Coinbase, Binance, Plaid, etc.)?
    
-   Furthermore, we’ve designed our oracle to easily scale up to use cases that we consider relevant to the Secret Network. Among them are:
+   Furthermore, we’ve designed our oracle to easily scale up to use cases that we consider relevant to the Secret Network:
    
     - credit score check for Anti-Money Laundering (AML)
    
