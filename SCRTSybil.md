@@ -175,6 +175,7 @@ Initially, the WebApp for the SCRTSybil Oracle will only allow user authenticati
 
 
 2. **Auxiliary & Novel Use Cases**
+
    Developing an oracle for credit score checks automatically satisfies this auxiliary use case:
 
     - personal information integrity validation: do the user’s first and last name match across different platforms (Coinbase, Binance, Plaid, etc.)?
