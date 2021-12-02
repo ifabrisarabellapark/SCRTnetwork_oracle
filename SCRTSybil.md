@@ -171,15 +171,15 @@ Initially, the WebApp for the SCRTSybil Oracle will only allow user authenticati
 #### Future Plans
 
 1. **Image processing** 
-   - Integrate image processing for KYC authentication, e.g., reading in customer’s passports, driving license, medical service card, etc. 
+   - Integrate image processing for KYC authentication, e.g., reading in customer’s passports, driving license, medical service card.
 
 
 2. **Auxiliary & Novel Use Cases**
-   - Developing an oracle for credit score checks automatically satisfies an auxiliary use case:
+   Developing an oracle for credit score checks automatically satisfies this auxiliary use case:
 
        - personal information integrity validation: do the user’s first and last name match across different platforms (Coinbase, Binance, Plaid, etc.)?
    
-   - Furthermore, we’ve designed our oracle to easily scale up to use cases that we consider relevant to the Secret Network. Among them are:
+   Furthermore, we’ve designed our oracle to easily scale up to use cases that we consider relevant to the Secret Network. Among them are:
 
        - credit score check for Anti-Money Laundering (AML)
    
