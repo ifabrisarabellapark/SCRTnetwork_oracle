@@ -132,7 +132,7 @@ We would be willing to consider part payment in SCRTs, up to 50%. The grant can 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code. |
+| 0b. | Documentation | We will provide inline documentation of the code. |
 | 0c. | Test Guide | Run unit tests to ensure functionality and robustness of core functions (~70%). |
 | 1. | Node | Spin up SCRT network node via Raspberry Pi 4.  |
 | 2. | Smart Contract Compiler | Write a smart contract in Rust to encrypt the calculated credit score to SCRT chain. |
