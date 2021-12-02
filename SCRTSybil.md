@@ -11,8 +11,10 @@ How can one validate the trustworthiness of blockchain users, while maintaining 
 
 ## Detailed Product Description 
 
+SCRTSybil Oracle Model
 ![SCRTSybil Oracle Model](https://github.com/BalloonBox-Inc/SCRTnetwork_oracle/blob/main/images/SCRTSybil_oracle.png)
 
+SCRTSybil Architecture
 ![SCRTSybil Architecture](https://github.com/BalloonBox-Inc/SCRTnetwork_analytics/blob/main/images/SCRTSybil_architecture.png)
 
 
