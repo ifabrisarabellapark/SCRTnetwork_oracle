@@ -100,10 +100,7 @@ Our team consists of the following roles:
 - **Total Costs:** 175,000 USD
 
 
-Our team will require 4 months to complete this project. We intend to have 2 developers full-time, 2 data scientists full-time, and 1 UX/UI designer part-time, a product architect, and a project manager.
-
-We can receive payments in 3 disbursements, one at the beginning of the grant, one after completion of Milestone 1, and the last one after the completion of Milestone 2. 
-
+Our team will require 4 months to complete this project. We intend to have 2 developers full-time, 2 data scientists full-time, and 1 UX/UI designer part-time, a product architect, and a project manager. We can receive payments in 4 disbursements, one at the beginning of the grant, three after completion of each milestone.
 We would be willing to consider part payment in SCRTs, up to 50%. The grant can be paid to either of the following addresses:
 - BTC address: bc1qz36smg7zg9d2de7qurj9a49fetemavta39a9zp
 - ETH address: 0x3ffA0e66091742a867430D140E36826c06ba19Be
