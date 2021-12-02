@@ -177,16 +177,15 @@ Initially, the WebApp for the SCRTSybil Oracle will only allow user authenticati
 2. **Auxiliary & Novel Use Cases**
    Developing an oracle for credit score checks automatically satisfies this auxiliary use case:
 
-       - personal information integrity validation: do the user’s first and last name match across different platforms (Coinbase, Binance, Plaid, etc.)?
+    - personal information integrity validation: do the user’s first and last name match across different platforms (Coinbase, Binance, Plaid, etc.)?
    
    Furthermore, we’ve designed our oracle to easily scale up to use cases that we consider relevant to the Secret Network. Among them are:
-
-       - credit score check for Anti-Money Laundering (AML)
    
-       - credit score check to support loan application for university/post-secondary education (in such case validators should include a diverse set of eLearning Platforms, e.g., Coursera, LinkedIn Learning, Udacity, CloudAcademy, Udemy, DataCamp. An academic institution may want a credit score for a prospective student based on financial history but also academic history. For this use case, we could skew the algorithm weightings towards oAuth, where eLearning Platforms prove/disprove self-study courses.
-
+    - credit score check for Anti-Money Laundering (AML)
    
-      - third party (e.g., banks, financial institutions) request issuing of Secret private keys to validate user’s credibility 
+    - credit score check to support loan application for university/post-secondary education (in such case validators should include a diverse set of eLearning Platforms, e.g., Coursera, LinkedIn Learning, Udacity, CloudAcademy, Udemy, DataCamp. An academic institution may want a credit score for a prospective student based on financial history but also academic history. For this use case, we could skew the algorithm weightings towards oAuth, where eLearning Platforms prove/disprove self-study courses.
+
+    - third party (e.g., banks, financial institutions) request issuing of Secret private keys to validate user’s credibility 
 
 
 3. **More Credit Check Providers**
