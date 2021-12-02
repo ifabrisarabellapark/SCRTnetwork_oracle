@@ -108,7 +108,7 @@ We would be willing to consider part payment in SCRTs, up to 50%. The grant can 
  
 ### Milestone 1 - APIs, Database, Integration, Credit Score Algorithm
 - **Estimated duration:** Week 1-6
-- **Costs:** 50,000 USD
+- **Costs:** 52,500 USD
 
 
 | Number | Deliverable | Specification |
@@ -124,7 +124,7 @@ We would be willing to consider part payment in SCRTs, up to 50%. The grant can 
  
 ### Milestone 2 - Node, Smart Contract Compiler
 - **Estimated duration:** Week 7-12
-- **Costs:** 50,000 USD
+- **Costs:** 52,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -137,7 +137,7 @@ We would be willing to consider part payment in SCRTs, up to 50%. The grant can 
  
 ### Milestone 3 - WebApp: framework + UI 
 - **Estimated duration:** Week 13-16
-- **Costs:** 30,000 USD
+- **Costs:** 17,500 USD
 
 
 | Number | Deliverable | Specification |
