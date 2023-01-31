@@ -3,7 +3,8 @@
 ## Project Description 
 Project name: SCRTSybil
 
-SCRTSybil is an oracle for credit score checks. The objective of SCRTSybil is to return a quantifiable, yet private and partially-encrypted credit score for SCRT network users allowing to categorize users by credibility and trustworthiness within the ecosystem. Credit checks will incentivize the activity of new, yet trusted and verified SCRT network users, while also affirming the reputation of long-standing users.
+SCRTSybil is an oracle for credit score checks, designed for the [Secret Network](https://scrt.network/). The objective of SCRTSybil is to return a quantifiable, yet private and partially-encrypted credit score for SCRT network users allowing to categorize users by credibility and trustworthiness within the ecosystem. Credit checks will incentivize the activity of new, yet trusted and verified SCRT network users, while also affirming the reputation of long-standing users.
+
 Users will need to authenticate themselves via their Ledger or Keplr wallet to access the SCRTSybil Web2 app for starting the scoring process. After completing the necessary steps their score is computed and sent to a smart contract generator which packages their score alongside some basic information that will be encrypted when being published to the network. Users then have their ‘profiles’ stored and accessible on SCRT for anyone to request their credit score by specifying their public address as an identifier/primary key which binds the user account to their score and related attributes of the score. Various key types will decrypt different pieces of information about the users depending on who the score requester is and whether the user endorses the access request.   
  
 ## Problem / Solution  
